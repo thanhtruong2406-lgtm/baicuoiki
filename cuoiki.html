@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Baicuoiki</title>
+
+    <link rel="stylesheet" href="cuoiki.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- start btn -->
+        <button class="start-button" id="startBtn">
+            Bắt đầu
+        </button>
+
+        <!-- Khu vực trò chơi -->
+        <div class="game-area">
+
+            <!-- bên trái -->
+            <div class="game-board" id="gameBoard">
+                <div class="tile">1</div>
+                <div class="tile">2</div>
+                <div class="tile">3</div>
+                <div class="tile">4</div>
+                <div class="tile">5</div>
+                <div class="tile">6</div>
+                <div class="tile">7</div>
+                <div class="tile">8</div>
+                <div class="tile">9</div>
+                <div class="tile">10</div>
+                <div class="tile">11</div>
+                <div class="tile empty"></div>
+            </div>
+
+
+            <!-- Khu vực bên phải -->
+            <div class="sidebar">
+                <!-- Đồng hồ -->
+                <div class="timer">
+                    <h3>Đồng Hồ</h3>
+                    <h2 id="timer">00:00</h2>
+                </div>
+
+
+                <!-- Hướng dẫn di chuyển -->
+                <div class="instructions">
+                    <h3>Hướng Dẫn Di Chuyển</h3>
+
+                    <div class="arrow-keys">
+
+                        <div>
+                            <span class="key">
+                                <img src="image/up-arrow.png" alt="Lên">
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="key">
+                                <img src="image/back.png" alt="Trái">
+                            </span>
+
+                            <span class="key">
+                                <img src="image/down-arrow.png" alt="Xuống">
+                            </span>
+
+                            <span class="key">
+                                <img src="image/right-arrow.png" alt="Phải">
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="wasd-keys">
+
+                        <div>
+                            <span class="key">W</span>
+                        </div>
+
+                        <div>
+                            <span class="key">A</span>
+                            <span class="key">S</span>
+                            <span class="key">D</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Lịch sử lượt chơi -->
+        <div class="history">
+
+            <h3>Lịch Sử Lượt Chơi</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Bước đi</th>
+                        <th>Thời gian</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historyBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="cuoiki.js"></script>
+
+</body>
+
+</html>
